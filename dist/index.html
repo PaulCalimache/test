@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Horizontal Smooth Scroll Layout | Demo 4 | Codrops</title>
+		<meta name="description" content="A horizontal smooth scroll layout powered by Locomotive Scroll">
+		<meta name="keywords" content="locomotive scroll, smooth scroll, horizontal, layout, web design, javascript, css">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="/favicon.26242483.ico">
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.typekit.net/vxy2fer.css">
+		<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+		<link rel="stylesheet" type="text/css" href="/demo4.7fb5a017.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script src="/base.98fd6c19.js"></script><script src="/demo4.7fb5a017.js"></script></head>
+	<body class="demo-4 loading">
+		<div class="frame"><!-- don't put fixed elements into the scroll container! -->
+			<a id="btn_menu_open" href="#menu"><div id="cercle"><i id="bars" class="fas fa-bars fa-3x"></i></div></a>
+			<a id="btn_menu_close" href="#acceuil"><div id="cercle"><i id="close" class="fas fa-times fa-3x"></i></div></a>
+		</div>
+	
+		<div id="overlay">
+			<div id="cache">
+			<h1 class="ml2">Alexis Fournier</h1>
+			<h2 class="ml3">Use scroll or &nbsp;<kbd class="key">↑</kbd>&nbsp; & &nbsp;<kbd class="key">↓</kbd>&nbsp; to navigate</h2>
+			</div>
+		</div>
+		<div id="menu">
+			<h1 id="big_name">Alexis Fournier</h1>
+			<div id="menu_content">
+				<div id="about">
+					<h2>About me</h2>
+					<ul>
+						<li>Height (cm) : 178</li>
+						<li>Breast (cm) : 95</li>
+						<li>Waist (cm) : 67</li>
+						<li>Hips (cm) : 88</li>
+						<li>Confection : 38</li>
+						<li>Jacket : 46</li>
+						<li>Shoe size : 43</li>
+						<li>Weight (kg) : 57</li>
+						<li>Eyes : greens</li>
+						<li>Shades : grey</li>
+						<li>hair : supple red</li>
+					</ul>
+				</div>
+				<div id="menu_img">
+					<img src="/presentation.abe1a36d.PNG">
+				</div>
+				<div id="contact">
+					<h2>Contact</h2>
+					<a href="tel:+33682506778">+33 6 XX XX XX XX</a>
+					<a href="mailto:alexis.fournier@gmail.com">alexis.fournier@gmail.com</a>
+					<div id="contact_insta">
+						<i class="fab fa-instagram fa-3x"></i>
+						<a href="https://www.instagram.com/alexis_frnr/?hl=fr" target="_blank">alexis_frnr</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main data-scroll-container="" id="acceuil">
+			<div class="content">
+				<div class="gallery" id="gallery">
+					<div class="gallery__text yellow"><span class="gallery__text-inner" data-scroll="" data-scroll-speed="-1" data-scroll-direction="vertical">Yellow</span><span data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" class="gallery__text-inner">Vintage</span></div>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/yellow1.e42b6cf0.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number yellow">01</span>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/yellow2.b7fcf7a4.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number yellow">02</span>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/yellow3.73522ed2.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number yellow">03</span>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/yellow4.fa9e5924.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number yellow">04</span>
+						</figcaption>
+					</figure>
+					<div class="gallery__text purple"><span class="gallery__text-inner" data-scroll="" data-scroll-speed="-1" data-scroll-direction="vertical">Purple</span><span data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" class="gallery__text-inner">Streetwear</span></div>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/purple1.e041b3c5.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number purple">05</span>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/purple2.7f6666c5.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number purple">06</span>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/purple3.c501983e.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number purple">07</span>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+						<div class="gallery__item-img"><div class="gallery__item-imginner" style="background-image: url(/purple4.ac6a03ee.PNG)"></div></div>
+						<figcaption class="gallery__item-caption">
+							<span class="gallery__item-number purple">08</span>
+						</figcaption>
+					</figure>
+					<div class="gallery__text"><span class="gallery__text-inner" data-scroll="" data-scroll-speed="-4" data-scroll-direction="vertical">Hexed</span><span data-scroll="" data-scroll-speed="3" data-scroll-direction="vertical" class="gallery__text-inner">kambu</span></div>
+				</div>
+			</div>
+		</main>
+		
+		<svg class="cursor" width="20" height="20" viewBox="0 0 20 20">
+			<circle class="cursor__inner" cx="10" cy="10" r="5"></circle>
+		</svg>
+		<script src="/demo4.e22d7780.js"></script>
+	</body>
+</html>
